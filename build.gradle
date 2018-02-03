@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.bouncycastle:bcprov-jdk15on:1.53'
+    compile 'org.bouncycastle:bcpkix-jdk15on:1.53'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    testCompile group: 'org.testng', name: 'testng', version: '6.13.1'
+}
